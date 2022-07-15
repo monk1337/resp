@@ -96,7 +96,7 @@ class connected_papers(object):
 
     def download_papers(self, query, n=10):
 
-        for paper_i in tqdm(range(1, n)):
+        for paper_i in tqdm(range(1, n+1)):
             try:
                 self.search_(query, paper_i)
                 self.bib2df()
