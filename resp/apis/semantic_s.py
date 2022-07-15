@@ -3,6 +3,7 @@ import json
 from bs4 import BeautifulSoup
 import pandas as pd
 from tqdm import tqdm
+import time
 
 class Semantic_Scholar(object):
     
@@ -72,19 +73,20 @@ class Semantic_Scholar(object):
 
 
     def ss(self, keyword, max_pages = 5, 
-                 full_page_result = False):
+                 min_year = 2015, 
+                 max_year = 2022, 
+                 full_page_result = False, api_wait = 5):
         "ss function call"
 
-        total_pages = int(max_pages/10)
         all_pages = []
-
-        for page in tqdm(range(1, total_pages+2)):
-
+        for page in tqdm(range(1, max_pages+1)):
             ss_soup = self.payload(keyword, page = page, 
-                       min_year = 2018,
-                       max_year = 2022)
+                       min_year = min_year,
+                       max_year = max_year)
 
             ss_result = self.soup_html(ss_soup)
             all_pages.append(ss_result)
+            time.sleep(api_wait)
+        
         df = pd.concat(all_pages)
-        return df
+        return df.reset_index(drop=True)
