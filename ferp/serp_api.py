@@ -145,7 +145,7 @@ class Serp(object):
 
         results = {}
         next_page = True
-        page_no = 0
+        page_no = 1
         next_link = url + f"&api_key={self.api_key}"
         all_df = []
 
@@ -212,7 +212,7 @@ class Serp(object):
     def pagination(self, cengine, max_pages, save_result="."):
 
         has_next_page = True
-        page_no = 0
+        page_no = 1
         all_result = {}
         all_df = []
 
