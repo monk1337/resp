@@ -3,6 +3,8 @@ import json
 from bs4 import BeautifulSoup
 import pandas as pd
 from tqdm import tqdm
+from resp.apis.serp_api import Serp
+
 
 
 class Ferp(object):
