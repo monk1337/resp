@@ -8,5 +8,5 @@
 
 - Fetch all citation of a single paper from Google Scholar
 - Fetch all related papers of single paper from Google Scholar
-- Fetch all connected papers from connected-papers.com (it doesn't use citation to connect papers, it use complex algo)
+- Fetch all connected papers from connectedpapers.com (it doesn't use citation tree, it uses to build graph [complex algo](https://www.connectedpapers.com/about))
 - Fetch revelent papers based on keyword form different sources including ACL, ACM, PMLR etc
