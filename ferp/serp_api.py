@@ -94,12 +94,12 @@ class Serp(object):
     
     def google_scholar_search(self, q, max_pages):
     
-        folder_name = self.to_md5(query)
+        folder_name = self.to_md5(q)
         folder_path = f"Google_data/Google_Scholar/{folder_name}/"
         Path(folder_path).mkdir(parents=True, exist_ok=True)
 
-        seng        = qs.sengine(q)
-        result      = qs.pagination(seng, max_pages, folder_path)
+        seng        = self.sengine(q)
+        result      = self.pagination(seng, max_pages, folder_path)
         return result
 
     def filter_re(self, res):
