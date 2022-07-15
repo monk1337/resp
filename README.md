@@ -16,8 +16,8 @@
 
 ### Fetching Papers from :
 
-- ✅ [Google Scholar](https://scholar.google.com/)
-- ✅ [Acl](https://aclanthology.org/)
+- [Google Scholar](https://scholar.google.com/) ✅
+- [Acl](https://aclanthology.org/) ✅
 - ✅ [Pmlr](https://proceedings.mlr.press/)
 - ✅ [Arxiv](https://arxiv.org/)
 - ✅ [Semantic Scholar](https://www.semanticscholar.org/)
