@@ -25,3 +25,8 @@
 - ✅ [IJCAI](https://www.ijcai.org/)
 - ✅ [openreview](https://openreview.net/)
 - ✅ [thecvf](https://openaccess.thecvf.com/menu)
+
+
+| Conference Name |  |
+|-------------|-------|
+| **Linux**   | ✅    | 
