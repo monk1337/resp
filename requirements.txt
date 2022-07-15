@@ -1,0 +1,4 @@
+selenium==4.2.0
+pybtex==0.24.0 
+google-search-results-python
+shutup==0.2.0
