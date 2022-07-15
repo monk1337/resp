@@ -90,6 +90,17 @@ class Serp(object):
         seng = self.gengine(query)
         result = self.pagination(seng, max_pages, folder_path)
         return result
+    
+    
+    def google_scholar_search(self, q, max_pages):
+    
+        folder_name = self.to_md5(query)
+        folder_path = f"Google_data/Google_Scholar/{folder_name}/"
+        Path(folder_path).mkdir(parents=True, exist_ok=True)
+
+        seng        = qs.sengine(q)
+        result      = qs.pagination(seng, max_pages, folder_path)
+        return result
 
     def filter_re(self, res):
         return [k["title"] for k in res["organic_results"]]
