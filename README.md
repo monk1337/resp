@@ -9,7 +9,7 @@
 - Fetch all citation of a single paper from Google Scholar
 - Fetch all related papers of single paper from Google Scholar
 - Fetch all connected papers from connectedpapers.com (it doesn't use citation tree, it uses [similarity](https://www.connectedpapers.com/about) to build graphs)
-- Fetch revelent papers based on keyword form different sources including ACL, ACM, PMLR etc
+- Fetch relevant papers based on keyword form different sources including ACL, ACM, PMLR etc
 
 
 
