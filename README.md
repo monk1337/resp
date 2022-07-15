@@ -16,17 +16,14 @@
 
 ### Fetching Papers from :
 
-- [Google Scholar](https://scholar.google.com/) ✅
-- [Acl](https://aclanthology.org/) ✅
-- ✅ [Pmlr](https://proceedings.mlr.press/)
-- ✅ [Arxiv](https://arxiv.org/)
-- ✅ [Semantic Scholar](https://www.semanticscholar.org/)
-- ✅ [NeurIPS](https://nips.cc/)
-- ✅ [IJCAI](https://www.ijcai.org/)
-- ✅ [openreview](https://openreview.net/)
-- ✅ [thecvf](https://openaccess.thecvf.com/menu)
-
-
 | Conference Name |  |
 |-------------|-------|
-| **Linux**   | ✅    | 
+| [Google Scholar](https://scholar.google.com/) | ✅    | 
+| [Acl](https://aclanthology.org/) | ✅    |
+| [Pmlr](https://proceedings.mlr.press/) | ✅    |
+| [Arxiv](https://arxiv.org/) | ✅    |
+| [Semantic Scholar](https://www.semanticscholar.org/) | ✅    |
+| [NeurIPS](https://nips.cc/) | ✅    |
+| [IJCAI](https://www.ijcai.org/) | ✅    |
+| [openreview](https://openreview.net/) | ✅    |
+| [thecvf](https://openaccess.thecvf.com/menu) | ✅    |
