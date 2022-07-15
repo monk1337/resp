@@ -7,7 +7,7 @@ from resp.apis.serp_api import Serp
 
 
 
-class Ferp(object):
+class Resp(object):
     
     def __init__(self, api_key):
         self.engine = Serp(api_key)
