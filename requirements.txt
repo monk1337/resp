@@ -9,9 +9,9 @@ google-search-results==2.4.1
 h11==0.13.0
 idna==3.3
 latexcodec==2.0.1
-numpy==1.23.1
 outcome==1.2.0
-pandas==1.4.3
+pandas
+numpy
 pybtex==0.24.0
 pycparser==2.21
 pyOpenSSL==22.0.0
