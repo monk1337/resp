@@ -96,16 +96,21 @@ class connected_papers(object):
 
     def download_papers(self, query, n=10):
 
+        df_results = []
         for paper_i in tqdm(range(1, n+1)):
             try:
                 self.search_(query, paper_i)
                 df = self.bib2df(query)
+                df['query'] = [query] * len(df)
+                df_results.append(df)
             except Exception as e:
                 print(e)
                 pass
         try:
+            df = pd.concat(df_results)
             df = df.drop_duplicates("key").reset_index(drop=True)
             print(f"Total connected papers {len(df)}")
             return df
         except Exception as e:
+            print("Please run again..")
             pass
