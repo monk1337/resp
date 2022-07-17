@@ -78,8 +78,8 @@ class connected_papers(object):
         latest_paper = str(paths[-1])
         return latest_paper
 
-    def bib2df(self):
-        unique_node_id = str(uuid.uuid4())
+    def bib2df(self, text):
+        unique_node_id = self.to_md5(text)
         parser = bibtex.Parser()
         latest_download = self.get_path()
         print(latest_download)
@@ -99,15 +99,13 @@ class connected_papers(object):
         for paper_i in tqdm(range(1, n+1)):
             try:
                 self.search_(query, paper_i)
-                self.bib2df()
+                df = self.bib2df(query)
             except Exception as e:
                 print(e)
                 pass
-
-        all_dfs = pd.concat(
-            [pd.read_csv(file) for file in glob.glob("Connected_Papers_Data/df_csvs/*")]
-        )
-        all_dfs = all_dfs.drop_duplicates("key").reset_index(drop=True)
-        all_dfs.to_csv("Connected_Papers_Data/df_csvs/final_result.csv")
-        print(f"Total connected papers {len(all_dfs)}")
-        return all_dfs
+        try:
+            df = df.drop_duplicates("key").reset_index(drop=True)
+            print(f"Total connected papers {len(df)}")
+            return df
+        except Exception as e:
+            pass
