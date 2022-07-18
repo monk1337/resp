@@ -16,59 +16,59 @@ class Resp(object):
     
     def acl(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://aclanthology.org {keyword}', 
+            f'site:aclanthology.org {keyword}', 
                                             max_pages)
         return result
     
     def pmlr(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://proceedings.mlr.press {keyword}', 
+            f'site:proceedings.mlr.press {keyword}', 
                                             max_pages)
         return result
     
     def arxiv(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://arxiv.org {keyword}', 
+            f'site:arxiv.org {keyword}', 
                                             max_pages)
         return result
     
     
     def semantic_scholar(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://www.semanticscholar.org {keyword}', 
+            f'site:www.semanticscholar.org {keyword}', 
                                             max_pages)
         return result
     
     
     def nips(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://papers.nips.cc {keyword}', 
+            f'site:papers.nips.cc {keyword}', 
                                             max_pages)
         return result
     
     
     def ijcai(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://www.ijcai.org {keyword}', 
+            f'site:www.ijcai.org {keyword}', 
                                             max_pages)
         return result
     
     
     def openreview(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://openreview.net {keyword}', 
+            f'site:openreview.net {keyword}', 
                                             max_pages)
         return result
     
     def cvf(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://openaccess.thecvf.com {keyword}', 
+            f'site:openaccess.thecvf.com {keyword}', 
                                             max_pages)
         return result
     
     def google_scholar(self, keyword, max_pages = None):
         result  = self.engine.google_search(
-            f'site:https://scholar.google.com {keyword}', 
+            f'site:scholar.google.com {keyword}', 
                                             max_pages)
         return result
     
