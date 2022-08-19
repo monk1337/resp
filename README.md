@@ -35,15 +35,3 @@
 | [IJCAI](https://www.ijcai.org/) | ✅    |
 | [openreview](https://openreview.net/) | ✅    |
 | [thecvf](https://openaccess.thecvf.com/menu) | ✅    |
-
-
-
-
-### Quick Start :bulb:
-```python
-
-from resp.apis.serp_api import Serp
-qs          = Serp(api_key)
-nips_result = paper_engine.nips('Zero-shot learning', max_pages = 2)
-
-```
