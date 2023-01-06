@@ -40,9 +40,9 @@
 I'm constantly working on new projects, and I'm excited to continue adding to my collection. If you'd like to support my work and help fuel my passion, consider buying me a coffee! 
 
 <p align="center">
-<a href="https://www.buymeacoffee.com/stoicbatman"><img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/screenshot-xcode-capabilities.png" width="600"></a>
+<br>
+<a href="https://www.buymeacoffee.com/stoicbatman"><img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png" width="300"></a>
 </p>
-
 
 [![Star History Chart](https://api.star-history.com/svg?repos=monk1337/resp&type=Date)](https://star-history.com/#monk1337/resp&Date)
 
