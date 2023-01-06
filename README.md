@@ -37,7 +37,9 @@
 | [thecvf](https://openaccess.thecvf.com/menu) | ✅    |
 
 
-I'm constantly working on new projects, and I'm excited to continue adding to my collection. If you'd like to support my work and help fuel my passion, consider buying me a coffee! 
+
+
+I'm constantly working on new projects, and I'm excited to continue adding to my collection. If you'd like to support my work and help fuel my passion, consider buying me a coffee :)
 
 <p align="center">
 <br>
