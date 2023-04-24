@@ -17,6 +17,14 @@
 
 
 
+## 🤖 Setup
+
+```shell
+git clone https://github.com/monk1337/resp
+cd resp 
+pip install -r requirements.txt && pip install -e .
+```
+
 
 
 
@@ -26,7 +34,7 @@
 
 | Conference Name |  |
 |-------------|-------|
-| [Google Scholar](https://scholar.google.com/) | ✅    | 
+| [Google Scholar](https://scholar.google.com/) | ✅    |
 | [Acl](https://aclanthology.org/) | ✅    |
 | [Pmlr](https://proceedings.mlr.press/) | ✅    |
 | [Arxiv](https://arxiv.org/) | ✅    |
