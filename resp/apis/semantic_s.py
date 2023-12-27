@@ -41,16 +41,11 @@ class Semantic_Scholar(object):
                 "venues": [],
                 "yearFilter": {"min": min_year, "max": max_year},
                 "requireViewablePdf": False,
-                "publicationTypes": [],
-                "externalContentTypes": [],
                 "fieldsOfStudy": [],
-                "useFallbackRankerService": False,
-                "useFallbackSearchCluster": True,
                 "hydrateWithDdb": True,
                 "includeTldrs": True,
                 "performTitleMatch": True,
                 "includeBadges": True,
-                "tldrModelVersion": "v2.0.0",
                 "getQuerySuggestions": False,
             }
         )
