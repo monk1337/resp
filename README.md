@@ -46,7 +46,9 @@ pip install -r requirements.txt && pip install -e .
 
 
 If you find this repository useful, please cite our project:
+
 ```
+
 @misc{Resp2021,
   title = {RESP : Research Papers Search},
   author = {Pal, Ankit},
@@ -54,7 +56,9 @@ If you find this repository useful, please cite our project:
   howpublished = {\url{https://github.com/monk1337/resp}},
   note = {Fetch Academic Research Papers from different sources including Google Scholar, ACL, ACM, PMLR etc based on keywords or title}
 }
+
 ```
+
 
 I'm constantly working on new projects, and I'm excited to continue adding to my collection. If you'd like to support my work and help fuel my passion, consider buying me a coffee :)
 
