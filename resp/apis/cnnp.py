@@ -1,6 +1,14 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+try:
+    from selenium import webdriver
+    from selenium.webdriver.common.keys import Keys
+    from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+    SELENIUM_AVAILABLE = True
+except ImportError:
+    SELENIUM_AVAILABLE = False
+    webdriver = None
+    Keys = None
+    DesiredCapabilities = None
+
 import pandas as pd
 import glob
 import time
@@ -17,8 +25,18 @@ import shutup
 shutup.please()
 
 
+def _check_selenium():
+    """Check if selenium is installed and raise helpful error if not."""
+    if not SELENIUM_AVAILABLE:
+        raise ImportError(
+            "connected_papers requires selenium and related packages. "
+            "Install with: pip install respsearch[selenium]"
+        )
+
+
 class connected_papers(object):
     def __init__(self, url="https://www.connectedpapers.com"):
+        _check_selenium()
         Path("./Connected_Papers_Data/df_csvs").mkdir(parents=True, exist_ok=True)
         Path("./Connected_Papers_Data/connected_downloads").mkdir(
             parents=True, exist_ok=True

@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "respsearch"
+version = "0.1.0"
+description = "Fetch Academic Research Papers from different sources including Google Scholar, ACL, ACM, PMLR, Arxiv, Semantic Scholar, and more"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+authors = [
+    { name = "monk1337" }
+]
+keywords = [
+    "research",
+    "papers",
+    "academic",
+    "google-scholar",
+    "arxiv",
+    "semantic-scholar",
+    "acl",
+    "acm",
+    "pmlr",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+    "beautifulsoup4",
+    "requests",
+    "pandas",
+    "numpy",
+    "tqdm",
+    "google-search-results",
+    "pybtex",
+    "latexcodec",
+    "PyYAML",
+    "shutup",
+]
+
+[project.optional-dependencies]
+selenium = [
+    "selenium",
+    "trio",
+    "trio-websocket",
+    "wsproto",
+]
+dev = [
+    "pytest",
+    "build",
+]
+
+[project.urls]
+Homepage = "https://github.com/monk1337/resp"
+Repository = "https://github.com/monk1337/resp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["resp"]
