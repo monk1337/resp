@@ -10,7 +10,7 @@ readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.9"
 authors = [
-    { name = "monk1337" }
+    { name = "monk1337", email = "aadityaura@gmail.com" }
 ]
 keywords = [
     "research",
@@ -67,6 +67,7 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/monk1337/resp"
 Repository = "https://github.com/monk1337/resp"
+Issues = "https://github.com/monk1337/resp/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["resp"]
