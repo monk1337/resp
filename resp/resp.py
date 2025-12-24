@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from tqdm import tqdm
 from resp.apis.serp_api import Serp
-from resp.apis.cnnp import connected_papers
 
 
 
@@ -85,6 +84,7 @@ class Resp(object):
 
     def all_related_papers(self, query):
         """download all related papers from two sources"""
+        from resp.apis.cnnp import connected_papers
 
         result = []
         cp = connected_papers()
