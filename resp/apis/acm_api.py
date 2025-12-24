@@ -37,7 +37,21 @@ class ACM(object):
         main_class = soup.find(
             "div", {"class": "col-lg-9 col-md-9 col-sm-8 sticko__side-content"}
         )
+        
+        # Handle case where the HTML structure has changed or page didn't load properly
+        if main_class is None:
+            print("Warning: Could not find expected ACM page structure. Website may have changed.")
+            print("Trying alternative selectors...")
+            # Try alternative selector
+            main_class = soup.find("div", {"class": "items-results"})
+            if main_class is None:
+                return pd.DataFrame({"title": [], "link": []})
+        
         main_c = main_class.find_all("div", {"class": "issue-item__content"})
+        
+        # If no results found with this class, try alternative
+        if not main_c:
+            main_c = main_class.find_all("div", {"class": "search-result"})
 
         for paper in main_c:
             temp_data = {}
