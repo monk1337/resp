@@ -10,6 +10,26 @@
   <a href="https://colab.research.google.com/drive/188cWcZrBRVGAF3Dp_5uswmLgbBNKSioB?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/monk1337/resp_mcp">
+    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20NEW-RESP%20MCP%20Server-8A2BE2?style=for-the-badge&labelColor=black" alt="RESP MCP Server">
+  </a>
+  <a href="https://github.com/monk1337/resp_mcp">
+    <img src="https://img.shields.io/badge/Try%20with-Claude%20Code%20%26%20Agents-FF6F00?style=for-the-badge&labelColor=black" alt="Try with Claude Code and Agents">
+  </a>
+</p>
+
+> [!IMPORTANT]
+> ## 🚀 RESP is now available as an MCP server &nbsp;—&nbsp; [**`resp_mcp`**](https://github.com/monk1337/resp_mcp)
+>
+> **Use RESP's paper search directly inside [Claude Code](https://github.com/monk1337/resp_mcp), Claude Desktop, Cursor, and any other AI agent** via the [Model Context Protocol](https://modelcontextprotocol.io). Search arXiv, Semantic Scholar, OpenReview, DBLP, the ACL Anthology, and 27 major AI/ML/NLP/CV conferences — as agent tools.
+>
+> ```bash
+> claude mcp add resp -- resp-mcp
+> ```
+>
+> ### &nbsp; 👉 &nbsp; **Check it out: [github.com/monk1337/resp_mcp](https://github.com/monk1337/resp_mcp)** &nbsp; ⭐
+
 ## Installation
 
 ```bash
