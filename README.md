@@ -168,4 +168,4 @@ If you'd like to support this project:
   <a href="https://www.buymeacoffee.com/stoicbatman"><img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png" width="200"></a>
 </p>
 
-[![Star History Chart](https://api.star-history.com/svg?repos=monk1337/resp&type=Date)](https://star-history.com/#monk1337/resp&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=monk1337/resp&type=Date)](https://star-history.dera.page/#monk1337/resp&Date)
